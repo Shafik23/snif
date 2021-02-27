@@ -10,8 +10,10 @@ fn main() {
         process::exit(1);
     });
 
+    println!();
     println!("Searching for {}", config.query);
     println!("In file {}", config.filename);
+    println!();
 
     if let Err(e) = snif::run(config) {
         println!("Application error: {}", e);
